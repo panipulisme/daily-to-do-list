@@ -1,0 +1,38 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>To Do List</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kantumruy+Pro:wght@200;400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="todo-wrapper">
+        <h2>Mau Ngerjain Apa Hari Ini Bray?</h2>
+        <p>Klik 2x kalo lo udah selesai ngerjain ya!</p>
+
+        <form name="todo-adder">
+            <input type="text" id="todo-entry-box" />
+        </form>
+        <button id="add-button" class="pretty-button">Add</button>
+        <br />
+        <ol id="todo-list">
+        </ol>
+        <div id="control-wrapper">
+            <button id="clear-completed-button" onclick="clearCompletedToDoItems()" class="pretty-button">Clear Completed</button>
+            <button id="empty-button" onclick="emptyList()" class="pretty-button">Empty List</button>
+            <button id="save-button" onclick="saveList()" class="pretty-button">Save List</button>
+        </div>
+        <fieldset>
+            <legend>Journaling dulu gak sih 😂😍</legend>
+            <textarea name="" id="" cols="60" rows="10" placeholder="Ceritain isi hati lo dan gak usah malu ....."></textarea>
+        </fieldset>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
